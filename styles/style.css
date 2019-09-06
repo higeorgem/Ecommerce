@@ -1,0 +1,15 @@
+#products_box{
+	width: 100%;
+	text-align: center;
+	margin-left: 0%;
+	margin-bottom: 0%;
+	margin-right: 0%;
+}
+#single_product{
+	float: left;
+	margin-left: 0.5%;
+	padding: 0.5%;
+}
+#single_product img{
+	border: 3px solid black;
+}

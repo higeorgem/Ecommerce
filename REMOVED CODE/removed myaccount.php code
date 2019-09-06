@@ -1,0 +1,16 @@
+
+<?php
+            $user = $_SESSION['customer_email'];
+
+            $get_img = "SELECT * FROM customers WHERE customer_email='$user'";
+
+            $run_img = mysqli_query($con, $get_img);
+
+            $row_img = mysqli_fetch_array($run_img);
+
+            //RETRIEVE THE IMAGE OF THE LOGGED IN CUSTOMER FROM THE DATABASE 
+            
+            $c_image = $row_img['customer_image'];
+            <!-- DISPLAY THE IMAGE WHICH IS NOW STORED IN THE customer_images FOLDER IN THE CUSTOMER ACCOUNT -->
+            echo "<img src='customer_images/$c_image' width='150' height='150'>";
+            ?>
